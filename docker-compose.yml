@@ -1,5 +1,5 @@
 version: "3"
-
+name: valheim
 services:
   valheim:
     image: ghcr.io/lloesche/valheim-server
