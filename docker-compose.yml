@@ -6,6 +6,7 @@ services:
     cap_add:
       - sys_nice
     volumes:
+      - /home/nemkin/Code/valheim/scripts:/scripts
       - /home/nemkin/Data/valheim/config:/config
       - /home/nemkin/Data/valheim/data:/opt/valheim
     ports:
