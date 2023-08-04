@@ -12,8 +12,8 @@ services:
       - "2456-2457:2456-2457/udp"
       - "9001:9001/tcp"
     env_file:
-      - ./public.env
       - ./private.env
+      - ./public.env
     restart: always
     stop_grace_period: 2m
 
