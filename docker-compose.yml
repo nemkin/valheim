@@ -6,9 +6,9 @@ services:
     cap_add:
       - sys_nice
     volumes:
-      - /home/nemkin/Code/valheim/scripts:/scripts
-      - /home/nemkin/Data/valheim/config:/config
-      - /home/nemkin/Data/valheim/data:/opt/valheim
+      - /home/nemkin/Git/valheim/scripts:/scripts
+      - /home/nemkin/Git/valheim/config:/config
+      - /home/nemkin/Git/valheim/server:/opt/valheim
     ports:
       - "2456-2457:2456-2457/udp"
       - "9001:9001/tcp"
