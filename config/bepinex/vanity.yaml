@@ -16,8 +16,13 @@ Everyone:
   name: Luna
   player: Steam_76561198091638262
   helmet: None
-  shoulder: None
   chest: ArmorLeatherChest
+  shoulder: None
   legs: ArmorLeatherLegs
+  gear: {}
+  crafted: {}
+1210591111:
+  name: Fream
+  player: Steam_76561198065605988
   gear: {}
   crafted: {}
