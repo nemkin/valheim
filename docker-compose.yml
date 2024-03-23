@@ -2,8 +2,8 @@ version: "3"
 name: valheim
 services:
   valheim:
-    image: ghcr.io/lloesche/valheim-server
     container_name: valheim-server
+    image: valheim-server-local
     cap_add:
       - sys_nice
     volumes:
@@ -18,4 +18,15 @@ services:
       - ./public.env
     restart: always
     stop_grace_period: 2m
+  discord:
+    container_name: discord-lilluna
+    build:
+      context: discord
+      dockerfile: Dockerfile
+    volumes:
+      - /home/nemkin/Git/valheim/server/htdocs:/valheim
+    env_file:
+      - ./private.env
+      - ./public.env
+    restart: always
 
