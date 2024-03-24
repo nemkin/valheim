@@ -16,9 +16,26 @@ services:
     env_file:
       - ./private.env
       - ./public.env
+    depends_on:
+      - log-server
+    logging:
+      driver: fluentd
+      options:
+        fluentd-address: localhost:24224
+        tag: "valheim/{{.Name}}/{{.ID}}"
     restart: always
     stop_grace_period: 2m
-  discord:
+  log-server:
+    container_name: log-server
+    image: fluent/fluentd
+    volumes:
+      - /home/nemkin/Git/valheim/fluentd:/fluentd/etc
+      - /home/nemkin/Git/valheim/logs:/var/log
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+    restart: always
+  discord-lilluna:
     container_name: discord-lilluna
     build:
       context: discord
