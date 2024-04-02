@@ -15,13 +15,6 @@ services:
     env_file:
       - ./private.env
       - ./public.env
-    depends_on:
-      - log-server
-    logging:
-      driver: fluentd
-      options:
-        fluentd-address: localhost:24224
-        tag: "valheim/{{.Name}}/{{.ID}}"
     restart: always
     stop_grace_period: 2m
   discord-lilluna:
