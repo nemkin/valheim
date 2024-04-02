@@ -24,16 +24,6 @@ services:
         tag: "valheim/{{.Name}}/{{.ID}}"
     restart: always
     stop_grace_period: 2m
-  log-server:
-    container_name: log-server
-    image: fluent/fluentd
-    volumes:
-      - ./fluentd:/fluentd/etc
-      - ./log:/var/log
-    ports:
-      - "24224:24224"
-      - "24224:24224/udp"
-    restart: always
   discord-lilluna:
     container_name: discord-lilluna
     build:
