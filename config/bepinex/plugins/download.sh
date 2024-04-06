@@ -11,3 +11,5 @@ wget https://gcdn.thunderstore.io/live/repository/packages/JereKuusela-Vanity-1.
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuAutoStore-2.1.6.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuCraftyBoxes-1.2.9.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuContainerSizes-1.0.2.zip
+wget https://gcdn.thunderstore.io/live/repository/packages/MSchmoecker-MultiUserChest-0.5.10.zip
+
