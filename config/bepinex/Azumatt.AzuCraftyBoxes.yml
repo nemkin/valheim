@@ -206,10 +206,14 @@ blastfurnace:
   exclude: []
 
 piece_cookingstation:
-  exclude: []
+  exclude:
+    - RawMeat
+    - NeckTail
 
 piece_cookingstation_iron:
-  exclude: []
+  exclude:
+    - RawMeat
+    - NeckTail
 
 piece_oven:
   exclude: []
