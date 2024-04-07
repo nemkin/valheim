@@ -219,16 +219,22 @@ piece_oven:
   exclude: []
 
 bonfire:
-  exclude: []
+  exclude:
+    - FineWood
+    - RoundLog
 
 CastleKit_groundtorch_unlit:
   exclude: []
 
 fire_pit:
-  exclude: []
+  exclude:
+    - FineWood
+    - RoundLog
 
 hearth:
-  exclude: []
+  exclude:
+    - FineWood
+    - RoundLog
 
 piece_brazierceiling01:
   exclude: []
