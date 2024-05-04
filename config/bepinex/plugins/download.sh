@@ -12,4 +12,5 @@ wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuAutoStore-
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuCraftyBoxes-1.2.9.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuContainerSizes-1.0.3.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/MSchmoecker-MultiUserChest-0.5.10.zip
+wget https://gcdn.thunderstore.io/live/repository/packages/KGvalheim-ItemDrawers-1.0.7.zip
 
