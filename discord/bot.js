@@ -6,8 +6,8 @@ require('dotenv').config();
 
 const { DISCORD_TOKEN, SERVER_PASS } = process.env;
 
-const client = new Client({ intents: [] });
-client.once('ready', () => {console.log('Ready!');});
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+client.once('ready', () => { console.log('Ready!'); });
 
 client.on('interactionCreate', async interaction => {
     if (!interaction.isChatInputCommand()) return;
@@ -32,6 +32,22 @@ client.on('interactionCreate', async interaction => {
                 console.error('Error parsing JSON:', parseError);
                 await interaction.reply('Sorry, there was an error processing the status.');
             }
+        });
+    } else if (commandName === 'joincode') {
+        const command = 'docker logs valheim-server | grep -i "join code" | sed -n \'s/.*join code \\([0-9]*\\).*/\\1/p\' | grep "." | tail -n 1';
+        
+        exec(command, (error, stdout, stderr) => {
+            if (error) {
+                console.error(`exec error: ${error}`);
+                interaction.reply('Failed to retrieve the join code.');
+                return;
+            }
+            if (stderr) {
+                console.error(`stderr: ${stderr}`);
+                interaction.reply('An error occurred while trying to retrieve the join code.');
+                return;
+            }
+            interaction.reply(stdout ? `Join Code: ${stdout}` : 'No join code found.');
         });
     }
 });
