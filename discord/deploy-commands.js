@@ -6,12 +6,8 @@ const { DISCORD_CLIENT_ID, DISCORD_TOKEN } = process.env;
 
 const commands = [
     {
-        name: 'status',
-        description: 'Replies with the status of the Valheim server.'
-    },
-    {
-        name: 'joincode',
-        description: 'Replies with the join code of the Valheim server.'
+        name: 'valheim',
+        description: 'Replies with the join information of the Valheim server.'
     }
 ];
 
