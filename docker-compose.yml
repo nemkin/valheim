@@ -24,6 +24,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - /home/nemkin/Git/valheim/server/htdocs:/valheim
+      - /var/run/docker.sock:/var/run/docker.sock
     env_file:
       - ./private.env
       - ./public.env
