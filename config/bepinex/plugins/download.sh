@@ -13,3 +13,6 @@ wget https://gcdn.thunderstore.io/live/repository/packages/ValheimModding-Jotunn
 wget https://gcdn.thunderstore.io/live/repository/packages/MSchmoecker-MultiUserChest-0.5.10.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/Nextek-SpeedyPaths-1.0.8.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/JereKuusela-Vanity-1.8.0.zip
+
+find . -type d -exec rm -rf {} +
+dtrx *.zip
