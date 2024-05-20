@@ -18,7 +18,7 @@ client.on('interactionCreate', async interaction => {
     const { commandName } = interaction;
 
     if (commandName === 'valheim') {
-        const command = 'docker logs valheim-server | grep -i "join code" | sed -n \'s/.*join code \\([0-9]*\\).*/\\1/p\' | grep "." | tail -n 1';
+        const command = 'docker logs valheim-darkness | grep -i "join code" | sed -n \'s/.*join code \\([0-9]*\\).*/\\1/p\' | grep "." | tail -n 1';
         exec(command, (error, stdout, stderr) => {
             if (error || stderr) {
 		const msg = `Failed to retrieve the join code.\n${error}\n${stderr}`;

@@ -1,9 +1,9 @@
 version: "3"
 name: valheim
 services:
-  valheim:
-    container_name: valheim-server
-    image: valheim-server-local
+  valheim-darkness:
+    container_name: valheim-darkness
+    image: ghcr.io/lloesche/valheim-server
     cap_add:
       - sys_nice
     volumes:
