@@ -3,7 +3,6 @@
 rm *.zip
 
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuAutoStore-2.1.9.zip
-wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuContainerSizes-1.0.3.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuCraftyBoxes-1.3.0.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/Azumatt-AzuExtendedPlayerInventory-1.4.3.zip
 wget https://gcdn.thunderstore.io/live/repository/packages/clevel-BeastsOfBurden-1.0.4.zip
