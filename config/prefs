@@ -4,6 +4,7 @@
 	<pref name="Bloom" type="int">1</pref>
 	<pref name="ChromaticAberration" type="int">1</pref>
 	<pref name="ClutterQuality" type="int">3</pref>
+	<pref name="ConsoleBindings" type="string"></pref>
 	<pref name="DOF" type="int">1</pref>
 	<pref name="DetailedParticleSystems" type="int">1</pref>
 	<pref name="DistantShadows" type="int">1</pref>
